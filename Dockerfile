@@ -1,9 +1,9 @@
 FROM lnls/epics-dist:base-3.15-debian-9
 
-ENV MODULE_OWNER motorapp
+ENV MODULE_OWNER lnls-dig
 ENV MODULE_REPO Galil-3-0
 ENV VERSION 3-6
-ENV COMMIT V${VERSION}
+ENV COMMIT V${VERSION}-LNLS1
 
 RUN git clone https://github.com/${MODULE_OWNER}/${MODULE_REPO}.git /opt/epics/${MODULE_REPO} && \
     cd /opt/epics/${MODULE_REPO} && \
